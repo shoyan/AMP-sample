@@ -157,6 +157,61 @@
         </amp-ad>
       </div>
 
+
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.</p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.</p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+
+      <amp-carousel width="1280" height="1000" layout="responsive" type="slides">
+        <figure>
+          <amp-img src="/sample.jpg" width="1280" height="857" layout="responsive"></amp-img>
+          <figcaption>Each image has a different caption.</figcaption>
+        </figure>
+        <figure>
+          <amp-img src="/sample.jpg" width="1280" height="853" layout="responsive"></amp-img>
+          <figcaption>Each image has a different caption.</figcaption>
+        </figure>
+        <figure>
+          <amp-img src="/sample.jpg" width="1280" height="853" layout="responsive"></amp-img>
+          <figcaption>Each image has a different caption.</figcaption>
+        </figure>
+      </amp-carousel>
+
+      <p>Lorem ipsum dolor sit amet, voluptua oporteat cum cu, eu vix interesset scribentur. Et iudico efficiendi duo, vim an odio iusto reformidans. At maluisset scripserit duo, cum in sumo delenit. Quot erant maiestatis usu ut. Ne mea maiorum vivendum argumentum, tale utinam postea mei in, eam in odio dicta patrioque.
+      </p>
+      <p>
+      Cum ad graeci legimus, ut duo omnesque petentium, mei saepe explicari principes eu. Ex mei ocurreret expetendis, ex errem blandit has. Phaedrum mediocrem appellantur his ut. Erat viris mediocrem id ius, ad dicta appareat assentior sit. Nec et nullam singulis moderatius, est reque vidisse copiosae eu.
+      </p>
+      <p>
+      Mutat dolores ea duo. Usu cu dico everti tincidunt, pri vero nullam vidisse no. Eam novum aeque populo cu. Verear contentiones ne quo, no sed consulatu definitionem.
+      </p>
+
+      <!-- ## Embedding related content -->
+      <!-- -->
+      <h2>Related Articles</h2>
+      <p>These articles might be interesting for you as well:</p>
+      <!-- It's a good idea to recommend related content to your readers. With `amp-list` it is possible to dynamically include personalized content into your AMPs. It's a good idea to link to the AMP version of related content in order to keep the user in the fast AMP world. Learn more about `amp-list` [here](/components/amp-list/) -->
+      <amp-list width="300" height="75" layout="responsive" src="/json/related_articles.json">
+        <template type="amp-mustache">
+          <a class="card related" href="{{url}}"><amp-img width="101" height="75" src="{{thumbnail}}"></amp-img><span>{{title}}</span></a>
+        </template>
+      </amp-list>
+      </main>
+
+      <!-- ## Cookie Consent -->
+      <!-- Use `amp-user-notification` to implement a cookie consent form (if needed). By default, the AMP runtime doesn't use cookies. Some analytics vendors might use require cookies though. Learn more about `amp-user-notification` [here](/components/amp-user-notification/) -->
+      <amp-user-notification layout="nodisplay" id="amp-user-notification1">
+        This page might use cookies if your analytics vendor requires them.
+        <button on="tap:amp-user-notification1.dismiss">Accept</button>
+      </amp-user-notification>
+
     </main>
   </body>
 </html>
